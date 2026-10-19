@@ -30,9 +30,9 @@ type Ev = { kind: "craft" | "movie"; title: string; time: string };
 function eventFor(date: Date): Ev | null {
   const wd = (date.getDay() + 6) % 7; // 0=Lun
   const d = date.getDate();
-  if (wd === 5 || wd === 6) return { kind: "movie", title: MOVIES[(d + wd) % MOVIES.length], time: wd === 5 ? "20:00" : "18:00" };
-  const list = CRAFTS[wd + 1 === 1 ? 1 : wd === 2 ? 3 : wd === 4 ? 5 : 0];
-  if (list) return { kind: "craft", title: list[d % list.length], time: "17:30" };
+  if (wd === 5 || wd === 6) return { kind: "movie", title: MOVIES[(d + wd) % MOVIES.length]!, time: wd === 5 ? "20:00" : "18:00" };
+  const list = CRAFTS[wd + 1];
+  if (list) return { kind: "craft", title: list[d % list.length]!, time: "17:30" };
   return null;
 }
 
