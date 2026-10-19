@@ -21,6 +21,31 @@ npm i
 npm run dev
 ```
 
+## Estructura del proyecto
+
+- `src/routes/index.tsx` — página de inicio con el calendario.
+- `src/components/event-calendar.tsx` — componente `<EventCalendar />` reutilizable; puede agregarse a cualquier página sin props.
+- `src/lib/events.ts` — datos y reglas del calendario (talleres, películas y horarios). Editar aquí cambia el calendario en toda la app.
+- `src/test/event-schedule.test.ts` — tests de las reglas: talleres lun/mié/vie 17:30, cine sáb 20:00 y dom 18:00, martes y jueves libres.
+
+Para mostrar el calendario en otra página:
+
+```tsx
+import { EventCalendar } from "@/components/event-calendar";
+
+export function OtraPagina() {
+  return <EventCalendar />;
+}
+```
+
+## Comandos
+
+```sh
+npm run dev     # servidor de desarrollo
+npm run build   # build de producción
+npm run test    # corre los tests
+```
+
 ## Built with
 
 - TanStack Start
