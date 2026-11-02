@@ -72,6 +72,20 @@ export const MOVIES: MovieInfo[] = [
   m("Ratatouille", 2007, "Brad Bird", 111, "Una rata con talento culinario sueña con ser chef en París."),
   m("El gran hotel Budapest", 2014, "Wes Anderson", 99, "Las aventuras de un conserje legendario y su joven botones."),
   m("Mi vecino Totoro", 1988, "Hayao Miyazaki", 86, "Dos hermanas descubren criaturas mágicas en el bosque junto a su nueva casa."),
+  m("Buscando a Nemo", 2003, "Andrew Stanton", 100, "Un pez payaso cruza el océano para rescatar a su hijo."),
+  m("Los Increíbles", 2004, "Brad Bird", 115, "Una familia de superhéroes retirados vuelve a la acción."),
+  m("El castillo ambulante", 2004, "Hayao Miyazaki", 119, "Una joven hechizada encuentra refugio en el castillo móvil de un mago."),
+  m("Pequeña Miss Sunshine", 2006, "Jonathan Dayton y Valerie Faris", 101, "Una familia caótica viaja en una vieja combi hacia un concurso infantil."),
+  m("Shrek", 2001, "Andrew Adamson y Vicky Jenson", 90, "Un ogro gruñón emprende un viaje para rescatar a una princesa."),
+  m("Up", 2009, "Pete Docter", 96, "Un anciano ata globos a su casa para cumplir el sueño de su vida."),
+  m("Juno", 2007, "Jason Reitman", 96, "Una adolescente ingeniosa enfrenta un embarazo inesperado."),
+  m("Escuela de rock", 2003, "Richard Linklater", 109, "Un músico fracasado forma una banda con sus alumnos de primaria."),
+  m("Eterno resplandor de una mente sin recuerdos", 2004, "Michel Gondry", 108, "Una pareja se somete a un procedimiento para borrarse mutuamente de la memoria."),
+  m("Ponyo", 2008, "Hayao Miyazaki", 101, "Una pececita quiere convertirse en humana tras conocer a un niño."),
+  m("El laberinto del fauno", 2006, "Guillermo del Toro", 118, "En la España de posguerra, una niña descubre un mundo mágico y peligroso."),
+  m("Monsters, Inc.", 2001, "Pete Docter", 92, "Dos monstruos descubren que los niños no son tan peligrosos como creían."),
+  m("Lost in Translation", 2003, "Sofia Coppola", 102, "Dos estadounidenses solitarios entablan una amistad en Tokio."),
+  m("El secreto de sus ojos", 2009, "Juan José Campanella", 129, "Un exempleado judicial revive un caso sin resolver que lo marcó."),
 ];
 
 /** Movie screening times keyed by weekday, 5 = Sábado, 6 = Domingo. */
