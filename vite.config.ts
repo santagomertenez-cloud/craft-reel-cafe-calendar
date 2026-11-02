@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Pre-bundle the dialog up front so a late dep re-optimization can't load a second React copy.
+    optimizeDeps: { include: ["@radix-ui/react-dialog"] },
+  },
 });
