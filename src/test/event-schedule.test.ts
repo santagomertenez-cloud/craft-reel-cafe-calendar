@@ -33,3 +33,12 @@ describe("Event schedule rules", () => {
     expect(sun!.time).toBe("18:00");
   });
 });
+
+describe("Event details", () => {
+  it("every event exposes a positive duration", () => {
+    for (let day = 19; day <= 25; day++) {
+      const ev = eventFor(d(day));
+      if (ev) expect(ev.durationMin).toBeGreaterThan(0);
+    }
+  });
+});
